@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+    <style>
+      #particles-js {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -10000;
+      }
+    </style>
+  </head>
+  <body class="">
+    <div id="particles-js"></div>
+    <header class="flex justify-between items-center p-4">
+      <h1 class="logo_nav text-white"><\JohanDev></h1>
+
+      <!-- Botón de menú hamburguesa para dispositivos móviles -->
+      <button id="mobile-menu-button" class="text-white xl:hidden z-[1000]">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+      <!-- Menú de navegación para dispositivos grandes -->
+      <nav
+        class="barra_navegacion hidden justify-between items-center gap-x-24 xl:flex"
+      >
+        <ul class="barra_navegacion_ul">
+          <li><a href="" class="text-white">Inicio</a></li>
+          <li><a href="" class="text-white">Proyectos</a></li>
+          <li><a href="" class="text-white">Sobre Mi</a></li>
+          <li><a href="" class="text-white">Educacion</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menú responsive para dispositivos móviles -->
+      <nav id="mobile-menu" class="xl:hidden">
+        <ul class="">
+          <li><a href="" class="text-white text-2xl">Inicio</a></li>
+          <li><a href="" class="text-white text-2xl">Proyectos</a></li>
+          <li><a href="" class="text-white text-2xl">Sobre Mi</a></li>
+          <li><a href="" class="text-white text-2xl">Educacion</a></li>
+        </ul>
+      </nav>
+      <button class="cta_nav">
+        <a href="" class="text-white">Trabajemos juntos</a>
+      </button>
+    </header>
+    <section id="inicio" class="flex">
+      <article class="inicio_johan">
+        <h1>Desarollador Web</h1>
+        <h2>Johan Bohorquez</h2>
+        <p class="achievement-highlight">
+          Reconocido como estudiante destacado en el bootcamp
+          <span class="bg-gray-400 rounded text-black p-[3px] text-lg font-bold"
+            >Talento Tech</span
+          >
+          y seleccionado por el
+          <span class="bg-gray-400 rounded text-black p-[3px] text-lg font-bold"
+            >SENA</span
+          >
+          para liderar una investigación clave en innovación tecnológica.
+        </p>
+        <p class="text-gray-300 text-lg font-bold mt-3">
+          ¿Listo para llevar tu visión al siguiente nivel?
+        </p>
+        <button id="contactame" class="button type1 mt-5">
+          <a href="google.com" target="_blank" class="btn-txt">Contáctame</a>
+        </button>
+      </article>
+      <article class="inicio_img w-1/2">
+        <nav class="p-3 absolute right-3 top-1/3 hidden md:block">
+          <ul
+            class="flex flex-col gap-y-5 p-3 bg-white/30 rounded-2xl nav_movil"
+            style="backdrop-filter: blur(10px)"
+          >
+            <li>
+              <a class="text-white" href=""><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="text-white" href=""><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a class="text-white" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="text-white" href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="text-white" href=""><i class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="assets/CV Johan Bohorquez.pdf" download class="download-btn">
+          CV
+          <svg
+            id="download"
+            viewBox="0 0 24 24"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z"
+            ></path>
+          </svg>
+        </a>
+        <img
+          src="./assets/img/johan_hero.png"
+          alt="developer"
+          class="img_hero"
+        />
+      </article>
+    </section>
+    <section id="sobre_mi" class="mt-20 hidden-section">
+      <article class="grid-container gap-y-3">
+        <div class="sombras grid-item item-1 flex flex-col-reverse lg:flex-row gap-x-5 borde_bento">
+          <div class="lg:w-2/3 flex flex-col gap-y-5">
+            <p class="nobile text-lg text-white leading-relaxed">
+              Mi enfoque es crear
+              <span
+                class="bg-gray-400 fira_sans text-black font-bold rounded p-1 text-base"
+                >soluciones</span
+              >
+              que no solo sean visualmente impactantes, sino también intuitivas
+              y fáciles de usar para los usuarios.
+            </p>
+            <p class="nobile text-lg text-white leading-relaxed">
+              Fuera del mundo del
+              <span
+                class="bg-gray-400 fira_sans text-black font-bold rounded p-1 text-base"
+                >desarrollo web</span
+              >, me encanta hacer deporte y leer. Creo firmemente en la
+              importancia del equilibrio entre el trabajo y la vida personal
+              para mantener la creatividad y el bienestar.
+            </p>
+            <button class="p-3 rounded-full bg-white/30">Contáctame</button>
+          </div>
+          <div class="mt-5 lg:mt-0 lg:w-1/3">
+            <img
+              class="w-full h-64 rounded-xl object-cover mb-5 lg:mb-0"
+              src="assets/johan_bento.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+        class="grid-item item-5 mt-5 lg:mt-0 relative overflow-hidden group sombras"
+        style="
+          background-image: url('assets/img/johan_redes_bento_edit2.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+        "
+      >
+        <!-- Capa oscura para el fondo -->
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+      
+        <!-- Overlay inicial que muestra "Mis Redes" -->
+        <div
+          class="absolute inset-0 bg-black opacity-70 flex items-center justify-center text-white text-2xl font-bold transition-opacity duration-300 group-hover:opacity-0 z-10"
+        >
+          Mis Redes
+        </div>
+      
+        <!-- Contenido de redes sociales, oculto inicialmente y visible al hacer hover -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20"
+        >
+          <div class="flex gap-4 mb-4">
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-black sombras shadow-gray-300 text-white flex items-center justify-center"
+            >
+              <!-- Icono de Facebook -->
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-black sombras shadow-gray-300 text-white flex items-center justify-center"
+            >
+              <!-- Icono de Github -->
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-black sombras shadow-gray-300 text-white flex items-center justify-center"
+            >
+              <!-- Icono de LinkedIn -->
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <button class="p-3 rounded-full bg-black sombras shadow-gray-300 text-white">
+            Descargar CV
+          </button>
+        </div>
+      </div>
+      
+      </article>
+
+      <article class="grid-container-2">
+        <div class=" flex flex-col lg:flex-row col-start-1 col-end-3 gap-5">
+          <div class="grid-item item-3 relative overflow-hidden sombras">
+            <img
+              src="assets/ilustracion_setup_ventoGrid.webp"
+              alt="Developer workspace illustration"
+              class="w-full h-auto"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-70 flex items-center justify-center text-white text-xl font-bold transition-opacity duration-300 hover:opacity-0"
+            >
+              Mi setup
+            </div>
+          </div>
+          
+          <div class=" sombras flex flex-col gap-8 mt-5 lg:mt-0 relative overflow-hidden trayectoria" style="background-image: url('assets/img/educacion_edit.jpg'); border-radius: 15px; background-position:top; background-size:cover;">
+            <div class=" grid-item item-4 flex flex-col items-center justify-center text-center p-4 opacity-0 transition-opacity duration-300 z-10">
+              <div class="flex flex-col justify-center items-center mb-2">
+                <i class="fas fa-laptop-code text-gray-400 mr-2 text-xl"></i>
+                <h1 class="text-gray-300 text-center" style="font-size: 1.1rem;">Análisis y desarrollo de software - SENA</h1>
+              </div>
+            </div>
+            <div class=" absolute inset-0 bg-black opacity-70 flex items-center justify-center text-white text-xl font-bold transition-opacity duration-300 z-20 hover:opacity-0 pointer-events-none">
+              Educación
+            </div>
+          </div>
+          
+        </div>
+        <div
+          class="grid-item item-5 mt-5 lg:mt-0 relative overflow-hidden group sombras"
+          style="
+            background-image: url('assets/img/tecnologias.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <!-- Capa oscura para el fondo -->
+          <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+          <!-- Overlay inicial que muestra "Tecnologías" -->
+          <div
+            class="absolute inset-0 bg-black opacity-70 flex items-center justify-center text-white text-2xl font-bold transition-opacity duration-300 group-hover:opacity-0 z-10"
+          >
+            Tecnologías
+          </div>
+
+          <!-- Carrusel de tecnologías, oculto inicialmente y visible al hacer hover -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20"
+          >
+            <div class="tecnologias">
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 452 520"
+                  width="60"
+                  height="60"
+                  class="hover-illuminate hover-illuminate-html"
+                >
+                  <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                  <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                  <path
+                    fill="#ecedee"
+                    d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 452 520"
+                  width="60"
+                  height="60"
+                  class="hover-illuminate-css hover-illuminate"
+                >
+                  <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52" />
+                  <path fill="#30a9dc" d="M226 472l149-41 35-394H226" />
+                  <path
+                    fill="#ecedee"
+                    d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  viewBox="0 0 256 154"
+                  width="60"
+                  height="60"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid"
+                  class="hover-illuminate-tailwind hover-illuminate"
+                >
+                  <defs>
+                    <linearGradient
+                      x1="-2.778%"
+                      y1="32%"
+                      x2="100%"
+                      y2="67.556%"
+                      id="gradient"
+                    >
+                      <stop stop-color="#2298BD" offset="0%"></stop>
+                      <stop stop-color="#0ED7B5" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z"
+                    fill="url(#gradient)"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 1052 1052"
+                  class="hover-illuminate-js hover-illuminate"
+                >
+                  <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                  <path
+                    d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                    fill="#323330"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid"
+                  viewBox="0 0 256 256"
+                  width="60"
+                  height="60"
+                  class="hover-illuminate-git hover-illuminate"
+                >
+                  <path
+                    d="M251.17 116.6 139.4 4.82a16.49 16.49 0 0 0-23.31 0l-23.21 23.2 29.44 29.45a19.57 19.57 0 0 1 24.8 24.96l28.37 28.38a19.61 19.61 0 1 1-11.75 11.06L137.28 95.4v69.64a19.62 19.62 0 1 1-16.13-.57V94.2a19.61 19.61 0 0 1-10.65-25.73L81.46 39.44 4.83 116.08a16.49 16.49 0 0 0 0 23.32L116.6 251.17a16.49 16.49 0 0 0 23.32 0l111.25-111.25a16.5 16.5 0 0 0 0-23.33"
+                    fill="#DE4C36"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  viewBox="0 0 256 250"
+                  width="60"
+                  height="60"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid"
+                  class="hover-illuminate-github hover-illuminate"
+                >
+                  <path
+                    d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60"
+                  width="60"
+                  preserveAspectRatio="xMidYMid"
+                  viewBox="0 0 256 252"
+                  class="hover-illuminate-mysql hover-illuminate"
+                >
+                  <path
+                    d="M236 194c-14 0-25 1-34 5-3 1-7 1-7 4l3 6c2 3 5 8 9 11l11 8 21 10 11 9 6 4-3-6-5-5c-5-7-11-13-18-18-6-3-18-9-20-15h-1l12-3 18-3 8-2v-2l-9-10c-8-8-18-15-28-22l-18-8c-2-1-6-2-7-4l-7-13-15-30-8-20c-18-30-38-48-68-65-6-4-14-5-22-7l-13-1-8-6C34 5 8-9 1 9c-5 11 7 22 11 28l9 13 3 9c3 8 5 17 9 24l6 10c2 2 4 3 5 6-3 4-3 9-4 13-7 20-4 44 5 59 2 4 9 14 18 10 8-3 6-13 8-22l1-4 8 14c5 9 14 18 22 24 4 3 8 8 13 10l-4-4-9-10c-8-10-14-21-20-32l-7-17-3-6c-3 4-7 7-9 12-3 7-3 17-4 26h-1c-6-1-8-7-10-12-5-12-6-32-1-46 1-4 6-15 4-19-1-3-4-5-6-7l-7-12-10-30-9-13c-3-5-7-8-10-14-1-2-2-5 0-7l2-2c2-2 9 0 11 1 6 3 12 5 17 9l8 6h4c6 1 12 0 17 2 9 3 18 7 25 12 23 14 42 35 54 59 3 4 3 8 5 12l12 26c4 8 7 16 12 23 3 4 14 6 18 8l12 4 18 12c2 2 11 7 12 10Z"
+                    fill="#00546B"
+                  />
+                  <path
+                    d="m58 43-7 1 6 7 4 9v-1c3-1 4-4 4-8l-2-4-5-4Z"
+                    fill="#00546B"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60"
+                  width="60"
+                  viewBox="0 -1 100 50"
+                  class="hover-illuminate-php hover-illuminate"
+                >
+                  <path
+                    fill="#fff"
+                    d="M7.579 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 01-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498a26.11 26.11 0 01-6.254.742h-6.36l-2.014 10.07H0l7.579-38.001m6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053h-1.113l.053-.053M41.093 0h7.314L46.34 10.123h6.572c3.604.071 6.289.813 8.056 2.226 1.802 1.413 2.332 4.099 1.59 8.056l-3.551 17.649h-7.42L54.979 21.2c.353-1.767.247-3.021-.318-3.763s-1.784-1.113-3.657-1.113l-5.883-.053-4.346 21.783h-7.314L41.093 0M70.412 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 01-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498a26.11 26.11 0 01-6.254.742h-6.36L70.2 48.124h-7.367l7.579-38.001m6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053H76.56l.053-.053"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg viewBox="0 0 256 228" width="60" height="60" class="hover-illuminate-react hover-illuminate" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621 6.238-30.281 2.16-54.676-11.769-62.708-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848 155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233 50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165 167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266 13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923 168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586 13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488 29.348-9.723 48.443-25.443 48.443-41.52 0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345-3.24-10.257-7.612-21.163-12.963-32.432 5.106-11 9.31-21.767 12.459-31.957 2.619.758 5.16 1.557 7.61 2.4 23.69 8.156 38.14 20.213 38.14 29.504 0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787-1.524 8.219-4.59 13.698-8.382 15.893-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246 12.376-1.098 24.068-2.894 34.671-5.345.522 2.107.986 4.173 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994 7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863-6.35-5.437-9.555-10.836-9.555-15.216 0-9.322 13.897-21.212 37.076-29.293 2.813-.98 5.757-1.905 8.812-2.773 3.204 10.42 7.406 21.315 12.477 32.332-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789 8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152 7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793 2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433 4.902.192 9.899.29 14.978.29 5.218 0 10.376-.117 15.453-.343-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026 347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815 329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627 310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695 358.489 358.489 0 0 1 11.036 20.54 329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026-.344 1.668-.73 3.367-1.15 5.09-10.622-2.452-22.155-4.275-34.23-5.408-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86-22.86-10.235-22.86-22.86 10.235-22.86 22.86-22.86Z" fill="#00D8FF"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <script src="particles.min.js"></script>
+    <script>
+      particlesJS({
+        particles: {
+          number: {
+            value: 180,
+            density: {
+              enable: true,
+              value_area: 1800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 0,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const botonContacto = document.getElementById("contactame");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show");
+        if (mobileMenu.classList.contains("show")) {
+          botonContacto.style.zIndex = "-1";
+        } else {
+          botonContacto.style.zIndex = "0";
+        }
+      });
+      var swiper = new Swiper('.swiper-container', {
+  loop: true, // Activar el loop para repetir las slides
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 3000, // Tiempo de retardo entre slides
+    disableOnInteraction: false, // Permitir que el autoplay continúe después de la interacción
+  },
+  slidesPerView: 1, // Número de slides a mostrar a la vez
+});
+
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

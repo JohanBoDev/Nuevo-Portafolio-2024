@@ -1,0 +1,632 @@
+/*Fira Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Monserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*Nobile*/
+@import url("https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+.monserrat {
+  font-family: "Monserrat", sans-serif;
+}
+.fira_sans {
+  font-family: "Fira Sans", sans-serif;
+}
+.nobile {
+  font-family: "Nobile", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000000;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 36px;
+  backdrop-filter: blur(10px);
+  background-color: #000000;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+/* menu responsive */
+.hidden {
+    display: none;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  /* Estilos del menú responsive */
+  #mobile-menu {
+    z-index: 100;
+    position: fixed;
+    left: -10px;
+    top: -10px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-150%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Clase para mostrar el menú con animación */
+  #mobile-menu.show {
+    transform: translateY(0%);
+  }
+  
+  /* Estilos del botón hamburguesa */
+  #mobile-menu-button {
+    cursor: pointer;
+    z-index: 200; /* Asegúrate de que esté por encima del menú */
+  }
+  
+  /* Estilos para los enlaces del menú */
+  #mobile-menu ul {
+    text-align: center;
+  }
+  
+  #mobile-menu li {
+    margin-bottom: 1rem;
+  }
+  
+  #mobile-menu a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
+  #mobile-menu a:hover {
+    color: #ddd;
+  }
+  
+  @media (min-width: 1250px) {
+    /* Oculta el menú responsive en pantallas grandes y muestra la barra de navegación */
+    #mobile-menu {
+      display: none;
+    }
+    
+    .barra_navegacion {
+      display: flex;
+    }
+  }
+  
+  
+  
+
+
+.logo_nav {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.barra_navegacion_ul {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.barra_navegacion_ul li {
+ position: relative;
+  font-family: "Monserrat", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.barra_navegacion_ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.5s;
+}
+
+.barra_navegacion_ul li:hover::after {
+  width: 100%;
+}
+
+.nav_movil{
+    font-family: "Monserrat", sans-serif;
+}
+
+.cta_nav {
+  padding: 15px;
+  border-radius: 36px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.cta_nav a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+}
+
+.cta_nav:hover {
+  background: #000000;
+}
+
+.cta_nav:hover a {
+  color: #ffffff;
+}
+
+.inicio_johan {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 3vw; /* Margen responsivo que se ajusta con el tamaño de la ventana */
+  z-index: -3;
+}
+
+@keyframes magicText {
+    0% {
+      text-shadow: 0 0 10px #151515, 0 0 20px #646464, 0 0 30px #818181, 0 0 40px #a8a8a8, 0 0 50px #dedede, 0 0 60px #949494, 0 0 70px #363636;
+    }
+    50% {
+      text-shadow: 0 0 20px #151515, 0 0 30px #646464, 0 0 40px #818181, 0 0 50px #a8a8a8, 0 0 60px #dedede, 0 0 70px #949494, 0 0 80px #2e2e2e;
+    }
+    100% {
+      text-shadow: 0 0 10px #151515, 0 0 20px #646464, 0 0 30px #818181, 0 0 40px #a8a8a8, 0 0 50px #dedede, 0 0 60px #949494, 0 0 70px #2e2e2e;
+    }
+  }
+
+.inicio_johan h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #c9c9c9;
+  text-shadow: 2px 2px 20px #000000;
+  animation: magicText 3s infinite alternate;
+}
+
+.inicio_johan h2 {
+  font-family: "Monserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #8a8a8a;
+  text-shadow: 2px 2px 20px #000000;
+  animation: magicText 3s infinite alternate;
+}
+
+.achievement-highlight {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 49%;
+  text-shadow: 2px 2px 20px #000000;
+}
+
+/*boton contactame*/
+
+.button {
+  height: 50px;
+  width: 47%;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.337);
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #cccccc;
+  transition: all 0.5s ease-in-out;
+  
+
+}
+
+.btn-txt {
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+.img_hero {
+  z-index: -10;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
+/* From Uiverse.io by faxriddin20 */
+.download-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(193, 193, 193);
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid rgb(133, 133, 133);
+  background-color: rgb(56, 56, 56);
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  z-index: 1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.download-btn svg {
+  width: 25px;
+  height: 25px;
+  fill: #8e8e8e;
+  transition: all 0.3s ease;
+}
+.download-btn:hover svg {
+  fill: white;
+}
+.download-btn:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+ @media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo_nav {
+        font-size: 1rem;
+    }
+
+    .cta_nav {
+        padding: 10px;
+        font-size: .8rem;
+    }
+
+   .inicio_johan{
+    gap: 20px;
+   }
+
+    .inicio_johan h1, .inicio_johan h2 {
+        font-size: 1.8rem;
+    }
+
+    .inicio_johan p{
+        font-size: 1.2rem;
+        text-shadow: 2px 2px 10px #000000;
+    }
+
+    .achievement-highlight {
+        font-size: 1rem;
+        max-width: 100%;
+        text-shadow: 2px 2px 20px #000000;
+    }
+
+    .button {
+        width: 90%;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.736);
+        color: #000000;
+        backdrop-filter: blur(10px);
+    }
+
+
+
+    .img_hero {
+        height: 300px;
+        width: 300px;
+        bottom: -20px;
+        right:0%;
+
+    }
+
+    .download-btn {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 80px;
+        height: 40px;
+        font-size: 0.8rem;
+        padding: 5px;
+        right: 10px;
+        bottom: 8%;
+    }
+
+
+
+}
+
+.sombras{
+  border: 1px  #ffffff6d;
+  border-style:dashed;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin: 5vh 3vw;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin: 5vh 3vw;
+  align-items: center;
+}
+
+.grid-item {
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(112, 112, 112, 0.608);
+}
+
+
+
+/* Estilos de las items */
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  backdrop-filter: blur(10px);
+  background-color: #000000;
+  flex-direction: column-reverse;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+.item-2 {
+  background: linear-gradient(145deg, rgba(30,30,30,0.9), rgba(40,40,40,0.9));
+  width: 555px
+}
+
+.item-3 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.item-3 img {
+  height: 300px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+}
+
+.item-4 {
+  background-color: #000000bc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+
+.trayectoria:hover .grid-item {
+  opacity: 1;
+}
+
+.trayectoria:hover .bg-black {
+  opacity: 0;
+}
+
+.item-4 h1 {
+  margin-bottom: 20px;
+}
+
+.item-5 {
+  background: linear-gradient(145deg, rgba(30,30,30,0.9), rgba(35,35,35,0.9));
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 300px;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .item-1 {
+    flex-direction: row;
+    grid-column-end: 3;
+  }
+
+  .item-5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-container-2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .item-1 {
+    flex-direction: row;
+    grid-column-end: 3;
+  }
+
+  .item-5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}
+
+
+.grid-item h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #181818;
+  }
+  25% {
+    background-color: #1a1a1a;
+  }
+  50% {
+    background-color: #333333;
+  }
+  75% {
+    background-color: #4d4d4d;
+  }
+  100% {
+    background-color: #262626;
+  }
+}
+
+
+.background {
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+
+.background:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologias{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 80px;
+}
+
+.hover-illuminate {
+  transition: filter 0.3s ease;
+}
+
+.hover-illuminate-html:hover {
+  filter: drop-shadow(0 0 10px rgba(227, 79, 38, 0.7)); /* Sombra roja para HTML */
+}
+
+.hover-illuminate-css:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.7)); /* Sombra azul para CSS */
+}
+
+/* Agrega más clases para cada SVG con sus colores respectivos */
+
+.hover-illuminate-js:hover {
+  filter: drop-shadow(0 0 10px rgba(240, 219, 79, 0.7)); /* Sombra amarilla para JavaScript */
+}
+
+.hover-illuminate-react:hover {
+  filter: drop-shadow(0 0 10px rgba(97, 219, 251, 0.7)); /* Sombra cyan para React */
+}
+
+.hover-illuminate-php:hover {
+  filter: drop-shadow(0 0 10px rgba(230, 230, 230, 0.7)); /* Sombra verde para php */
+}
+
+.hover-illuminate-git:hover {
+  filter: drop-shadow(0 0 10px rgba(240, 80, 51, 0.7)); /* Sombra roja para Git */
+}
+
+.hover-illuminate-github:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); /* Sombra negra para GitHub */
+}
+
+.hover-illuminate-mysql:hover {
+  filter: drop-shadow(0 0 10px rgba(19, 167, 226, 0.775)); /* Sombra azul para MySQL */
+}
+
+.hover-illuminate-tailwind:hover {
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.7)); /* Sombra cyan para Tailwind */
+}
+
+/*Animacion para hacer el scroll*/
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+  

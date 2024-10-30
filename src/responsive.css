@@ -1,0 +1,64 @@
+
+  
+  /* Encabezados */
+  h1 {
+    font-size: 2.5rem; /* Tamaño grande en pantallas grandes */
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.125rem; /* Tamaño base para párrafos */
+    line-height: 1.6;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 1249px) {
+    h1 {
+      font-size: 2rem; /* Ajuste para pantallas medianas */
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.75rem; /* Ajuste para pantallas pequeñas */
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Imagen */
+  .img_hero {
+    width: 50%; /* 50% del contenedor en pantallas grandes */
+  }
+  
+  @media (max-width: 1249px) {
+    .img_hero {
+      width: 70%; /* 70% en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .img_hero {
+      width: 90%; /* 90% en pantallas pequeñas */
+    }
+  }
+  
