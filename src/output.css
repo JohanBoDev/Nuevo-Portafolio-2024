@@ -602,10 +602,6 @@ video {
   z-index: 1000;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -614,8 +610,17 @@ video {
   grid-column-end: 3;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -638,8 +643,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -658,12 +663,20 @@ video {
   height: 16rem;
 }
 
-.h-\[361px\] {
-  height: 361px;
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-auto {
   height: auto;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .w-1\/2 {
@@ -674,12 +687,16 @@ video {
   width: 2.5rem;
 }
 
-.w-\[108\%\] {
-  width: 108%;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .resize {
@@ -736,6 +753,10 @@ video {
   row-gap: 1.25rem;
 }
 
+.gap-y-7 {
+  row-gap: 1.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -746,10 +767,6 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
 }
 
 .rounded-full {
@@ -774,17 +791,9 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .p-1 {
@@ -860,6 +869,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -893,30 +907,12 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.hover\:bg-opacity-0:hover {
-  --tw-bg-opacity: 0;
-}
-
 .hover\:opacity-0:hover {
   opacity: 0;
-}
-
-.hover\:opacity-100:hover {
-  opacity: 1;
 }
 
 .group:hover .group-hover\:opacity-0 {
@@ -932,8 +928,8 @@ video {
     display: block;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:h-full {
+    height: 100%;
   }
 }
 
@@ -944,6 +940,18 @@ video {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-\[100\%\] {
+    height: 100%;
   }
 
   .lg\:w-1\/3 {
