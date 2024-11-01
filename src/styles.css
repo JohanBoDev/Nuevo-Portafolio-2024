@@ -637,6 +637,12 @@ header {
   to { transform: translateX(-25%); }
 }
 
+/*Estilos para la seccion de proyectos*/
 
-
+.titulo_proyectos {
+  font-family: "Monserrat", sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #000000;
+  animation: magicText 3s infinite alternate;
+}
   
