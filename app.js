@@ -23,6 +23,8 @@ window.addEventListener('scroll', handleScroll);
 handleScroll();
 
 
+
+//funcion para el header animado
 let isScrolled = false;
 const debounceTime = 100; // Tiempo de debounce en milisegundos
 let scrollTimeout;
@@ -58,4 +60,3 @@ window.addEventListener("scroll", function () {
     }, debounceTime);
   }
 });
-
