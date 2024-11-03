@@ -1,176 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyectos - Johan Bohorquez</title>
     <link rel="stylesheet" href="src/styles.css" />
     <link href="./src/output.css" rel="stylesheet" />
     <style>
-        #particles-js {
-          background-color: black;
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          z-index: -10000;
-        }
-      </style>
-</head>
-<body class="bg-gray-900 text-white">
+      #particles-js {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -10000;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
     <div id="particles-js"></div>
     <!-- Header -->
-    <header class=" flex justify-between items-center p-4 bg-black z-[1000] mb-5">
-        <h1 class="logo_nav text-white"><\JohanDev></h1>
-        <nav class="barra_navegacion hidden xl:flex gap-x-24">
-            <ul class="barra_navegacion_ul flex space-x-6">
-                <li><a href="index.html" class="text-white">Inicio</a></li>
-                <li><a href="proyectos.html" class="text-white">Proyectos</a></li>
-                <li><a href="sobre_mi.html" class="text-white">Sobre Mi</a></li>
-                <li><a href="educacion.html" class="text-white">Educación</a></li>
-            </ul>
-        </nav>
-        <button class="cta_nav">
-            <a href="contacto.html" class="text-white">Trabajemos juntos</a>
-        </button>
+    <header
+      class="flex justify-between items-center p-4 bg-black z-[1000] mb-5"
+    >
+      <h1 class="logo_nav text-white"><\JohanDev></h1>
+      <nav class="barra_navegacion hidden xl:flex gap-x-24">
+        <ul class="barra_navegacion_ul flex space-x-6">
+          <li><a href="index.html" class="text-white">Inicio</a></li>
+          <li><a href="proyectos.html" class="text-white">Proyectos</a></li>
+          <li><a href="sobre_mi.html" class="text-white">Sobre Mi</a></li>
+          <li><a href="educacion.html" class="text-white">Educación</a></li>
+        </ul>
+      </nav>
+      <button class="cta_nav">
+        <a href="index.html" class="text-white">Volver</a>
+      </button>
     </header>
 
     <!-- Main Content -->
-    <main class="pt-20 ">
-        <section class="text-center mb-8 mt-10">
-            <h2 class="text-3xl font-bold titulo_proyectos">Todos los Proyectos</h2>
-            <p class="text-center m-1 mt-5 text-xl font-semibold text-gray-100 mb-6">
-                <span class="bg-gradient-to-r from-gray-100 to-gray-400 text-transparent bg-clip-text">
-                    Explora cada uno de mis trabajos
-                </span> y descubre cómo transformo <span class="underline decoration-wavy decoration-gray-400">ideas</span> en
-                <span class="bg-gray-300 titulo_proyectos px-1 py-0.5 rounded-lg text-gray-900">experiencias interactivas</span>.
-            </p>
-        </section>
+    <main class="pt-10 container">
+      <section class="text-center mb-8 mt-10">
+        <h2 class="text-2xl md:text-3xl font-bold titulo_proyectos">Todos los Proyectos</h2>
+        <p
+          class="text-center m-1 mt-5 text-lg md:text-xl font-semibold text-gray-100 mb-6"
+        >
+          <span
+            class="bg-gradient-to-r from-gray-100 to-gray-400 text-transparent bg-clip-text"
+          >
+            Explora cada uno de mis trabajos
+          </span>
+          y descubre cómo transformo
+          <span class="underline decoration-wavy decoration-gray-400"
+            >ideas</span
+          >
+          en
+          <span
+            class="bg-gray-300 titulo_proyectos px-1 py-0.5 rounded-lg text-gray-900"
+            >experiencias interactivas</span
+          >.
+        </p>
+      </section>
 
-        <!-- Project Gallery -->
-        <section class="">
-            <div id="projectContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6"></div>
-        </section>
+      <!-- Project Gallery -->
+      <section class="">
+        <div
+          id="projectContainer"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6"
+        ></div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="mt-10 text-center text-gray-500">
-        <p>&copy; 2024 Johan Bohorquez. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Johan Bohorquez. Todos los derechos reservados.</p>
     </footer>
     <script src="proyectos.js"></script>
     <script src="particles.min.js"></script>
     <script>
-        particlesJS({
-          particles: {
-            number: {
-              value: 180,
-              density: {
-                enable: true,
-                value_area: 1800,
-              },
-            },
-            color: {
-              value: "#ffffff",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#000000",
-              },
-              polygon: {
-                nb_sides: 5,
-              },
-              image: {
-                src: "img/github.svg",
-                width: 100,
-                height: 100,
-              },
-            },
-            opacity: {
-              value: 0.5,
-              random: false,
-              anim: {
-                enable: false,
-                speed: 1,
-                opacity_min: 0.1,
-                sync: false,
-              },
-            },
-            size: {
-              value: 3,
-              random: true,
-              anim: {
-                enable: false,
-                speed: 40,
-                size_min: 0.1,
-                sync: false,
-              },
-            },
-            line_linked: {
+      particlesJS({
+        particles: {
+          number: {
+            value: 180,
+            density: {
               enable: true,
-              distance: 150,
-              color: "#ffffff",
-              opacity: 0.4,
-              width: 1,
+              value_area: 1800,
             },
-            move: {
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "repulse",
+            },
+            onclick: {
               enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 0,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
               speed: 3,
-              direction: "none",
-              random: false,
-              straight: false,
-              out_mode: "out",
-              bounce: false,
-              attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200,
-              },
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
             },
           },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: {
-                enable: false,
-                mode: "repulse",
-              },
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 0,
-                line_linked: {
-                  opacity: 1,
-                },
-              },
-              bubble: {
-                distance: 400,
-                size: 40,
-                duration: 2,
-                opacity: 8,
-                speed: 3,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-              push: {
-                particles_nb: 4,
-              },
-              remove: {
-                particles_nb: 2,
-              },
-            },
-          },
-          retina_detect: true,
-        });
-      </script>
-
-</body>
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
 </html>

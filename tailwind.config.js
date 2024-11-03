@@ -1,8 +1,10 @@
 module.exports = {
   content: [
-    './*.html',       // Esto incluye todos los archivos HTML en la raíz del proyecto
-    './*.js',         // Esto incluye todos los archivos JS en la raíz del proyecto
+    './*.html',      
+    './*.js',     
+    "./node_modules/flowbite/**/*.js"
   ],
+        
   theme: {
     extend: {
       screens: {
@@ -11,5 +13,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+],
 }

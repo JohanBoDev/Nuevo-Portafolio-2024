@@ -4,6 +4,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*Nobile*/
 @import url("https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+:root {
+  /* COLORES */
+  --whiteColor: #ffffff;
+  --whiteColor-70: #ffffffb3;
+
+  --yellowColor: rgba(255, 255, 0, 0.886);
+  --blueColor: rgba(0, 128, 255, 0.909);
+  --redColor: rgba(255, 38, 0, 0.909);
+  --buttonSocialColor: #222222;
+  --buttonSocialColor__hover: rgba(54, 54, 54, 0.297);
+
+  /* TAMAÑO DE TEXTO */
+  --navLink__textSize: clamp(14px, 4vw, 22px);
+  --principalTitleSize: clamp(1.8rem, 6vw, 3rem);
+  --principalParagraphSize: clamp(1rem, 3vw, 1.3rem);
+
+  --SectionTitleSize: clamp(1.9rem, 6vw, 2.3rem);
+  --ExperienciaTitleSize: clamp(1.3rem, 5vw, 1.9rem);
+  --ExperienceParagraphSixe: clamp(1rem, 4vw, 1.3rem);
+}
+
+
 .monserrat {
   font-family: "Monserrat", sans-serif;
 }
@@ -81,14 +104,34 @@ header {
   }
   
   #mobile-menu a {
+    position: relative;
     color: white;
     font-size: 2rem;
     text-decoration: none;
+  }
+
+  #mobile-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Ajusta esta distancia según el espacio que quieras entre el texto y la línea */
+    width: 0;
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #ddd; /* Color de la línea */
+    transition: width 0.3s ease; /* Duración y tipo de transición */
+  }
+
+  #mobile-menu a:hover::after {
+    width: 100%;
   }
   
   #mobile-menu a:hover {
     color: #ddd;
   }
+
+  .visible-section {
+    z-index: 10; /* Coloca un valor bajo para las secciones animadas */
+}
   
   @media (min-width: 1250px) {
     /* Oculta el menú responsive en pantallas grandes y muestra la barra de navegación */
@@ -169,21 +212,30 @@ header {
 .inicio_johan {
   display: flex;
   flex-direction: column;
-  margin: 5vh 3vw; /* Margen responsivo que se ajusta con el tamaño de la ventana */
-  z-index: -3;
+  margin: 5vh 3vw; 
+  z-index: 1;
 }
 
 @keyframes magicText {
-    0% {
-      text-shadow: 0 0 10px #151515, 0 0 20px #646464, 0 0 30px #818181, 0 0 40px #a8a8a8, 0 0 50px #dedede, 0 0 60px #949494, 0 0 70px #363636;
-    }
-    50% {
-      text-shadow: 0 0 20px #151515, 0 0 30px #646464, 0 0 40px #818181, 0 0 50px #a8a8a8, 0 0 60px #dedede, 0 0 70px #949494, 0 0 80px #2e2e2e;
-    }
-    100% {
-      text-shadow: 0 0 10px #151515, 0 0 20px #646464, 0 0 30px #818181, 0 0 40px #a8a8a8, 0 0 50px #dedede, 0 0 60px #949494, 0 0 70px #2e2e2e;
-    }
+  0% {
+      text-shadow: 0 0 5px rgba(21, 21, 21, 0.7),
+                   0 0 15px rgba(100, 100, 100, 0.6),
+                   0 0 25px rgba(130, 130, 130, 0.5),
+                   0 0 35px rgba(168, 168, 168, 0.4);
   }
+  50% {
+      text-shadow: 0 0 10px rgba(21, 21, 21, 0.7),
+                   0 0 20px rgba(100, 100, 100, 0.6),
+                   0 0 30px rgba(130, 130, 130, 0.5),
+                   0 0 40px rgba(168, 168, 168, 0.4);
+  }
+  100% {
+      text-shadow: 0 0 5px rgba(21, 21, 21, 0.7),
+                   0 0 15px rgba(100, 100, 100, 0.6),
+                   0 0 25px rgba(130, 130, 130, 0.5),
+                   0 0 35px rgba(168, 168, 168, 0.4);
+  }
+}
 
 .inicio_johan h1 {
   font-family: "Montserrat", sans-serif;
@@ -192,6 +244,7 @@ header {
   color: #c9c9c9;
   text-shadow: 2px 2px 20px #000000;
   animation: magicText 3s infinite alternate;
+  will-change: text-shadow;
 }
 
 .inicio_johan h2 {
@@ -201,6 +254,7 @@ header {
   color: #8a8a8a;
   text-shadow: 2px 2px 20px #000000;
   animation: magicText 3s infinite alternate;
+ will-change: text-shadow;
 }
 
 .achievement-highlight {
@@ -232,7 +286,7 @@ header {
 
 .btn-txt {
   font-weight: 800;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .type1::after {
@@ -270,6 +324,10 @@ header {
   mask-image: linear-gradient(black 80%, transparent);
 }
 
+.img-container {
+  height: 50px; /* Da altura al contenedor */
+}
+
 /* From Uiverse.io by faxriddin20 */
 .download-btn {
   font-family: "Montserrat", sans-serif;
@@ -288,7 +346,7 @@ header {
   cursor: pointer;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   right: 20px;
 }
 .download-btn svg {
@@ -344,8 +402,7 @@ header {
         color: #000000;
         backdrop-filter: blur(10px);
     }
-
-
+ 
 
     .img_hero {
         height: 300px;
@@ -356,15 +413,7 @@ header {
     }
 
     .download-btn {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        width: 80px;
-        height: 40px;
-        font-size: 0.8rem;
-        padding: 5px;
-        right: 10px;
-        bottom: 8%;
+        display: none;
     }
 
 
@@ -644,5 +693,174 @@ header {
   color: #ffffff;
   text-shadow: 2px 2px 20px #000000;
   animation: magicText 3s infinite alternate;
+  will-change: text-shadow;
 }
+
+.button-bg {
+  background-color: #333;
+  visibility: hidden;
+}
+
+.group:hover .button-bg {
+  visibility: visible;
+}
+
+/*Estilos para la linea del tiempo*/
+/* Contenedor principal de experiencia laboral */
+.experienceSection {
+  color: #f1f1f1;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* Lista de experiencia */
+.experienceList {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+
+.experienceItemList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .experienceItemList {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.experienceItemList time {
+  color: #aaa;
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+}
+
+.experienceItemList h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.experienceItemList p {
+  color: #ccc;
+  margin: 0.5rem 0;
+  max-width: 100%;
+}
+
+/* Círculo decorativo */
+.decorativeCircleList {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 6px;
+  top: 0.5rem;
+  box-shadow: 0 0 10px 5px rgba(173, 173, 173, 0.8), /* Color amarillo */
+              0 0 15px 10px rgba(202, 202, 202, 0.6), 
+              0 0 20px 15px rgba(199, 199, 199, 0.4);
+}
+
+
+/* Línea vertical decorativa */
+.experienceList::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 2px;
+  background-color: #444;
+}
+
+
+/* Enlace de "Saber más" */
+
+/* From Uiverse.io by barisdogansutcu */ 
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #1d2024;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+ 
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: black;
+  border: solid 1px #01e0572d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
   
