@@ -69,6 +69,22 @@ header {
   animation: backgroundAnimation 10s ease infinite;
 }
 
+.hidden_header {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease;
+}
+
+header.scrolled {
+  width: 60%;
+  margin: 0 auto;
+  transition: width 0.1s ease, margin 0.1s ease;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+
+
 /* menu responsive */
 .hidden {
     display: none;
