@@ -3,7 +3,7 @@ const projects = [
     {
       title: "Nocaima",
       description: "Promoción de mi pueblo natal con su historia, economía, y turismo.",
-      githubLink: "https://github.com/tu_usuario/nocaima-web",
+      githubLink: "https://github.com/JohanBoDev/Nocaima---El-Coraz-n-de-Cundinamarca",
       liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
       technologies: ["HTML", "CSS", "JavaScript", "Tailwind"],
       image: "assets/img/nocaimaProyecto.webp",
@@ -11,48 +11,48 @@ const projects = [
     {
         title: "Dogma",
         description: "Gestión de inventarios y productos.",
-        githubLink: "https://github.com/tu_usuario/nocaima-web", 
-        liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
+        githubLink: "https://github.com/JohanBoDev/Dogma-Front-End", 
+        liveLink: "https://dogma-front-end.vercel.app/",
         technologies: ["CSS", "React", "Tailwind", "Php", "Sql"], 
         image: "assets/img/dogma.webp",
     },
     {
         title: "TutorLabs",
         description: "Plataforma de tutorías en línea.",
-        githubLink: "https://github.com/tu_usuario/nocaima-web  ",
-        liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
+        githubLink: "https://github.com/JohanBoDev/-Plataforma-de-Tutor-as-en-L-nea",
+        liveLink: "https://plataforma-tutorlabs.vercel.app/",
         technologies: ["CSS",  "React", "Tailwind", "Sql"],
         image: "assets/img/tutorlabs.webp"
     },
     {
         title: "ClimaCheck",
         description: "Aplicación para consultar el clima de cualquier ciudad.",
-        githubLink: "   https://github.com/tu_usuario/nocaima-web",
-        liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
+        githubLink: "https://github.com/JohanBoDev/ClimaCheck",
+        liveLink: "https://app-clima-liart.vercel.app/",
         technologies: ["HTML", "CSS", "Tailwind", "JavaScript"],
         image: "assets/img/ClimaCheck.webp"
     },
     {
         title: "Landing Page para Delicias del Sabor",
         description: "Landing page para un restaurante de comida típica.",
-        githubLink: "Landing Page para Delicias del Sabor",
-        liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
+        githubLink: "https://github.com/JohanBoDev/GastroWeb-Pagina-para-restaurante",
+        liveLink: "https://gastro-web-pagina-para-restaurante.vercel.app/",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: "assets/img/deliciasDelSabor.webp"
     },
     {
         title: "ComuniWeb",
         description: "Proyecto personal para un negocio de venta y ensamblaje de computadoras.",
-        githubLink: "Proyecto personal para un negocio de venta y ensamblaje de computadoras.",
-        liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
+        githubLink: "https://github.com/JohanBoDev/ComuniWeb",
+        liveLink: "https://comuni-web.vercel.app/",
         technologies: ["HTML", "CSS", "Tailwind", "JavaScript"],
         image: "assets/img/comuniweb.webp"
     },
     {
         title: "Calculadora de edad",
         description: "Aplicación donde el usuario ingresa su fecha de nacimiento, y la calculadora retorna su edad en años, meses y días.",
-        githubLink: "Aplicación donde el usuario ingresa su fecha de nacimiento, y la calculadora retorna su edad en años, meses y días.",
-        liveLink: "https://nocaima-el-coraz-n-de-cundinamarca-nz7g.vercel.app/",
+        githubLink: "https://github.com/JohanBoDev/Calculator-with-Js",
+        liveLink: "https://calculator-with-js-six.vercel.app/",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: "assets/img/calculadoraEdad.webp"
     },

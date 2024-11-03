@@ -37,6 +37,18 @@
   font-family: "Nobile", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 150px; /* Ajusta el desplazamiento para que la sección esté 20px más arriba */
+}
+
+#proyectos{
+  scroll-margin-top: 100px; /* Ajusta el desplazamiento para que la sección esté 20px más arriba */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -325,10 +337,10 @@ header {
 }
 
 .img-container {
-  height: 50px; /* Da altura al contenedor */
+  height: 50px; 
 }
 
-/* From Uiverse.io by faxriddin20 */
+
 .download-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -385,7 +397,8 @@ header {
     }
 
     .inicio_johan p{
-        font-size: 1.2rem;
+      max-width: 80%;
+        font-size: 1.3rem;
         text-shadow: 2px 2px 10px #000000;
     }
 
@@ -407,8 +420,7 @@ header {
     .img_hero {
         height: 300px;
         width: 300px;
-        bottom: -20px;
-        right:0%;
+       right: 0%;
 
     }
 

@@ -21,3 +21,6 @@ window.addEventListener('scroll', handleScroll);
 
 // Llama a handleScroll al cargar la página para que las secciones en la vista inicial se animen
 handleScroll();
+
+
+
