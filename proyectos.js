@@ -22,7 +22,7 @@ const projects = [
         githubLink: "https://github.com/JohanBoDev/-Plataforma-de-Tutor-as-en-L-nea",
         liveLink: "https://plataforma-tutorlabs.vercel.app/",
         technologies: ["CSS",  "React", "Tailwind", "Sql"],
-        image: "assets/img/tutorlabs.webp"
+        image: "assets/img/TutorLabs.webp"
     },
     {
         title: "ClimaCheck",
@@ -46,7 +46,7 @@ const projects = [
         githubLink: "https://github.com/JohanBoDev/ComuniWeb",
         liveLink: "https://comuni-web.vercel.app/",
         technologies: ["HTML", "CSS", "Tailwind", "JavaScript"],
-        image: "assets/img/comuniweb.webp"
+        image: "assets/img/ComuniWeb.webp"
     },
     {
         title: "Calculadora de edad",
