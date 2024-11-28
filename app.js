@@ -1,5 +1,5 @@
 // Selecciona solo las secciones específicas
-const sections = document.querySelectorAll('#sobre_mi, #tecnologias, #proyectos');
+const sections = document.querySelectorAll('#sobre_mi, #tecnologias, #proyectos, #educacion, #contacto');
 
 // Función que revisa si las secciones están en el viewport y les aplica la clase visible
 const handleScroll = () => {
