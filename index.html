@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio de Johan Bohorquez, desarrollador web.">
-  <meta name="keywords" content="Johan Bohorquez, desarrollador web, portafolio, proyectos, tecnologías">
+    <meta
+      name="description"
+      content="Portafolio de Johan Bohorquez, desarrollador web."
+    />
+    <meta
+      name="keywords"
+      content="Johan Bohorquez, desarrollador web, portafolio, proyectos, tecnologías"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <link href="./src/output.css" rel="stylesheet" />
-    <link rel="icon" href="assets/Ollama_dark.svg" type="image/x-icon">
+    <link rel="icon" href="assets/Ollama_dark.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -19,7 +25,7 @@
     />
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
+
     <title>Portafolio JohanBoDev</title>
     <style>
       #particles-js {
@@ -34,18 +40,12 @@
   </head>
   <body class="">
     <div id="particles-js"></div>
-    <header id="" class="flex justify-between items-center p-4 sticky top-4 z-50">
-      <h1 class="logo_nav text-white"><\JohanDev></h1>
-      <!-- Botón de menú hamburguesa para dispositivos móviles -->
-      <button id="mobile-menu-button" class="text-white xl:hidden z-[1000]">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-
-      <!-- Menú de navegación para dispositivos grandes -->
+    <header class="flex justify-center">
+      <!-- Menú de navegación para dispositivos grandes (escritorios y tabletas) -->
       <nav
-        class="barra_navegacion hidden justify-between items-center gap-x-24 xl:flex"
+        class="hidden items-center justify-center rounded-bl-3xl rounded-b-3xl ml-36 md:ml-auto shadow-lg scroll-nav xl:flex"
       >
-        <ul class="barra_navegacion_ul">
+        <ul class="flex gap-5 md:gap-12 font-semibold px-16 py-5">
           <li>
             <a href="#inicio" class="text-white titulo_proyectos">Inicio</a>
           </li>
@@ -59,168 +59,231 @@
           </li>
           <li>
             <a href="#educacion" class="text-white titulo_proyectos"
-              >Educacion</a
+              >Educación</a
             >
           </li>
         </ul>
       </nav>
+
+      <!-- Nombre y botón de menú hamburguesa para dispositivos móviles -->
+      <div
+        class="scroll-nav flex items-center justify-center rounded-bl-3xl rounded-b-3xl px-5 py-2 gap-24 md:ml-auto shadow-lg xl:hidden"
+      >
+        <!-- Nombre en dispositivos móviles -->
+        <h1 class="logo_nav text-white"><\JohanDev></h1>
+        <!-- Botón de menú hamburguesa -->
+        <button id="mobile-menu-button" class="text-white z-[1000]">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
 
       <!-- Menú responsive para dispositivos móviles -->
       <nav
         id="mobile-menu"
         class="xl:hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center transform -translate-y-full transition-transform duration-500 z-50"
       >
-        <ul class="flex flex-col space-y-6 mb-8">
+        <ul class="flex flex-col space-y-6">
           <li>
-            <a href="#inicio" class="text-white text-2xl font-semibold">Inicio</a>
+            <a
+              href="#inicio"
+              class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold"
+              >Inicio</a
+            >
           </li>
           <li>
-            <a href="#proyectos" class="text-white text-2xl font-semibold"
+            <a
+              href="#proyectos"
+              class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold"
               >Proyectos</a
             >
           </li>
           <li>
-            <a href="#sobre_mi" class="text-white text-2xl font-semibold"
+            <a
+              href="#sobre_mi"
+              class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold"
               >Sobre Mi</a
             >
           </li>
           <li>
-            <a href="#educacion" class="text-white text-2xl font-semibold"
+            <a
+              href="#educacion"
+              class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold"
               >Educación</a
             >
           </li>
         </ul>
 
-        <!-- Contenedor de enlaces de redes sociales en fila -->
-        <div class="flex space-x-6">
-          <a href="https://github.com/JohanBoDev " target="_blank"
-           class="text-white text-2xl"
+        <!-- Redes sociales -->
+        <div class="flex mt-5 space-x-6">
+          <a
+            href="https://github.com/JohanBoDev"
+            target="_blank"
+            class="text-white text-2xl sm:text-3xl md:text-4xl"
             ><i class="fab fa-github"></i
           ></a>
-          <a href="https://www.linkedin.com/in/johan-bohorquez-44341a270/" target="_blank" class="text-white text-2xl"
+          <a
+            href="https://www.linkedin.com/in/johan-bohorquez-44341a270/"
+            target="_blank"
+            class="text-white text-2xl sm:text-3xl md:text-4xl"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="#" class="text-white text-2xl"
+          <a href="#" class="text-white text-2xl sm:text-3xl md:text-4xl"
             ><i class="fab fa-twitter"></i
           ></a>
-          <a href="https://www.instagram.com/Jbohorquezzz" target="_blank" class="text-white text-2xl"
+          <a
+            href="https://www.instagram.com/Jbohorquezzz"
+            target="_blank"
+            class="text-white text-2xl sm:text-3xl md:text-4xl"
             ><i class="fab fa-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=100008195148319" target="_blank" class="text-white text-2xl"
+          <a
+            href="https://www.facebook.com/profile.php?id=100008195148319"
+            target="_blank"
+            class="text-white text-2xl sm:text-3xl md:text-4xl"
             ><i class="fab fa-facebook"></i
           ></a>
         </div>
       </nav>
-
-<!-- Botón que se muestra antes de 767px -->
-<button class="cta_nav block md:hidden">
-  <a href="#proyectos" class="text-white">Mis proyectos</a>
-</button>
-
-<!-- Botón que se muestra después de 767px -->
-<button class="cta_nav hidden md:block">
-  <a href="" class="text-white">Trabajemos juntos</a>
-</button>
-
     </header>
-    <!-- home -->
-    <section class="mb-32 h-[65vh]" id="inicio">
-      <article class="inicio_johan ">
-        <h1>Desarollador Web</h1>
-        <h2>Johan Bohorquez</h2>
-        <p class="achievement-highlight">
-          Logré ser reconocido como estudiante destacado en el bootcamp
-          <span class="bg-gray-400 rounded text-black p-[3px] text-lg font-bold"
-            >Talento Tech</span
-          >
-          y seleccionado por el
-          <span class="bg-gray-400 rounded text-black p-[3px] text-lg font-bold"
-            >SENA</span
-          >
-          para formar parte del proyecto Sennova.
-        </p>
-        <p class="text-gray-300 text-lg font-bold mt-3">
-          ¿Listo para llevar tu visión al siguiente nivel?
-        </p>
-        <button id="contactame" class="button type1 mt-5 md:block hidden">
-          <a href="#proyectos" class="btn-txt">Mira mis proyectos</a>
-        </button>
-      </article>
-      <article class="inicio_img w-1/2">
-        <nav class="p-3 absolute right-3 top-1/3 hidden md:block">
-          <ul
-            class="flex flex-col gap-y-5 p-3 bg-white/30 rounded-2xl nav_movil"
-            style="backdrop-filter: blur(10px)"
-          >
-            <li>
-              <a class="text-white" href="https://github.com/JohanBoDev" target="_blank"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-              <a class="text-white" href="https://www.linkedin.com/in/johan-bohorquez-44341a270/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a class="text-white" href=""><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a class="text-white" href="https://www.instagram.com/Jbohorquezzz" target="_blank"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a class="text-white" href="https://www.facebook.com/profile.php?id=100008195148319" target="_blank"><i class="fab fa-facebook"></i></a>
-            </li>
-          </ul>
-        </nav>
 
-        <a href="assets/CV Johan Bohorquez.pdf" download class="download-btn">
-          CV
-          <svg
-            id="download"
-            viewBox="0 0 24 24"
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z"
-            ></path>
-          </svg>
-        </a>
-        <img
-            src="./assets/img/johan_hero.webp"
-            alt="developer"
-            class="img_hero"
+    <!-- home -->
+    <section class="h-screen flex justify-center items-center p-5" id="inicio">
+      <article
+        class="inicio_johan flex flex-col lg:flex-row gap-8 p-5 mt-0 md:mt-16"
+      >
+        <!-- Imagen de perfil -->
+        <div class="flex justify-center lg:w-1/3">
+          <img
+            src="assets/johan_inicio.png"
+            class="h-44 w-44 sm:h-52 sm:w-52 lg:h-[22rem] lg:w-[22rem] object-cover rounded-full"
+            alt="Johan Bohorquez"
           />
+        </div>
+
+        <!-- Contenedor de texto -->
+        <div
+          class="inicio_johan flex flex-col justify-center items-center gap-y-3 lg:gap-y-7 lg:w-2/3 text-center"
+        >
+          <h6
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-300 text-shadow-md"
+          >
+            <span class="text-typing">Hola, mi nombre es...</span>
+            <span class="cursor"></span>
+          </h6>
+
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-500 text-shadow-lg"
+          >
+            Johan Bohorquez
+          </h2>
+
+          <h3
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-400 text-shadow-lg"
+          >
+            Desarrollador Web
+          </h3>
+
+          <!-- Enlaces de redes sociales -->
+          <nav class="p-3 flex">
+            <ul
+              class="flex gap-x-8 p-3 bg-white/30 rounded-2xl nav_movil"
+              style="backdrop-filter: blur(10px)"
+            >
+              <li>
+                <a
+                  class="text-white"
+                  href="https://github.com/JohanBoDev"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="text-white"
+                  href="https://www.linkedin.com/in/johan-bohorquez-44341a270/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a
+                  class="text-white"
+                  href="https://www.instagram.com/Jbohorquezzz"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="text-white"
+                  href="https://www.facebook.com/profile.php?id=100008195148319"
+                  target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="text-white"
+                  href="assets/CV Johan Bohorquez.pdf"
+                  download
+                  ><i class="fas fa-download"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Botón de contacto -->
+          <button
+            class="flex items-center justify-center gap-x-3 px-6 py-3 text-white font-semibold rounded-full shadow-xl relative"
+          >
+            <div
+              class="w-4 h-4 bg-white rounded-full animate-pulse ring-2 ring-white absolute left-0 top-1/2 transform -translate-y-1/2"
+            ></div>
+            Disponible para trabajar
+          </button>
+
+          <!-- Flecha de navegación -->
+          <div class="flex justify-center items-center mt-4">
+            <a href="#sobre_mi" class="text-white text-4xl animate-bounce">
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
       </article>
     </section>
+
     <!-- Sobre mi -->
     <section id="sobre_mi" class=" ">
-      <article class="grid-container gap-y-3 ">
+      <article class="grid-container gap-y-3">
         <div
-          class=" sombras grid-item item-1 flex flex-col-reverse lg:flex-row gap-x-5 borde_bento"
+          class="sombras grid-item item-1 flex flex-col-reverse lg:flex-row gap-x-5 borde_bento"
         >
           <div class="lg:w-2/3 flex flex-col gap-y-5">
-            <p class="nobile text-lg text-white leading-relaxed">
-              Me gusta crear 
-              <span
-                class="bg-gray-400 fira_sans text-black font-bold rounded p-1 text-base"
-                >paginas web</span
+            <p class="text-lg text-gray-300 font-montserrat">
+              Fuera del mundo del <b>desarrollo web</b> , me gusta hacer deporte y
+              leer. Le doy mucha importancia al equilibrio entre el trabajo y la
+              vida personal para poder mantener la creatividad y el bienestar en
+              mi vida.
+            </p>
+
+            <p class="text-lg text-gray-300 font-montserrat">
+              Logré ser reconocido como estudiante destacado en el bootcamp
+              <b>Talento Tech</b> y seleccionado por el <b>SENA</b> para formar parte del
+              proyecto Sennova.
+            </p>
+
+            <!-- Botón de contacto (sin cambios) -->
+            <button class="p-3 mt-5 rounded-full bg-white/30">
+              <a
+                href="mailto:bohorquezjohan958@gmail.com?subject=Quiero comunicarme contigo&body=Hola, me gustaría contactar contigo."
+                class="text-white"
               >
-              que no solo sean visualmente impactantes, sino también intuitivas
-              y fáciles de usar para los usuarios.
-            </p>
-            <p class="nobile text-lg text-white leading-relaxed">
-              Fuera del mundo del
-              <span
-                class="bg-gray-400 fira_sans text-black font-bold rounded p-1 text-base"
-                >desarrollo web</span
-              >, me gusta hacer deporte y leer. Le doy mucha importancia al
-              equilibrio entre el trabajo y la vida personal
-              para poder mantener la creatividad y el bienestar en mi vida.
-            </p>
-            <button class="p-3 rounded-full bg-white/30">
-              <a href="mailto:bohorquezjohan958@gmail.com?subject=Quiero comunicarme contigo&body=Hola, me gustaría contactar contigo." class="text-white">
                 Contáctame
               </a>
             </button>
-            
           </div>
           <div class="mt-5 lg:mt-0 lg:w-1/3">
             <img
@@ -263,7 +326,8 @@
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
-                href="https://github.com/JohanBoDev" target="_blank"
+                href="https://github.com/JohanBoDev"
+                target="_blank"
                 class="w-10 h-10 rounded-full bg-black sombras shadow-gray-300 text-white flex items-center justify-center"
               >
                 <!-- Icono de Github -->
@@ -898,7 +962,7 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
         <!-- Proyecto Nocaima -->
         <a
           href="nocaima.html"
@@ -947,7 +1011,8 @@
                 Dogma
               </h3>
               <p class="text-sm tracking-wider">
-                Proyecto del Sena para mejorar la gestión de inventarios y productos.
+                Proyecto del Sena para mejorar la gestión de inventarios y
+                productos.
               </p>
             </div>
           </article>
@@ -957,7 +1022,7 @@
         <a
           href="tutorlabs.html"
           target="_blank"
-          class="flex flex-col overflow-hidden rounded-lg  shadow-[rgba(255,255,255,0.15)_0px_0px_15px,rgba(255,255,255,0.2)_0px_0px_30px]"
+          class="flex flex-col overflow-hidden rounded-lg shadow-[rgba(255,255,255,0.15)_0px_0px_15px,rgba(255,255,255,0.2)_0px_0px_30px]"
         >
           <article>
             <div class="overflow-hidden">
@@ -1403,7 +1468,6 @@
         </li>
       </ol>
     </section>
-
     <footer class="rounded-lg shadow dark:bg-gray-900 m-4">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">

@@ -57,32 +57,8 @@ body {
   font-size: 1rem;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  margin: 10px;
-  border-radius: 36px;
-  backdrop-filter: blur(10px);
-  background-color: #000000;
-  animation: backgroundAnimation 10s ease infinite;
-}
 
-.hidden_header {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.1s ease, visibility 0.1s ease; /* Ajusta la duración de la transición aquí */
-}
 
-header.scrolled {
-  width: 60%;
-  margin: 0 auto;
-  height: 80px;
-  transition: width 3s ease, margin 3s ease, height 3s ease; /* Ajusta la duración de la transición aquí */
-  display: flex;
-  justify-content: center;
-}
 
 
 
@@ -99,8 +75,6 @@ header.scrolled {
   #mobile-menu {
     z-index: 100;
     position: fixed;
-    left: -10px;
-    top: -10px;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
@@ -135,7 +109,7 @@ header.scrolled {
   #mobile-menu a {
     position: relative;
     color: white;
-    font-size: 2rem;
+ 
     text-decoration: none;
   }
 
@@ -239,60 +213,71 @@ header.scrolled {
 }
 
 .inicio_johan {
-  display: flex;
-  flex-direction: column;
-  margin: 5vh 3vw; 
+
   z-index: 1;
 }
 
-@keyframes magicText {
+
+@keyframes typing {
   0% {
-      text-shadow: 0 0 5px rgba(21, 21, 21, 0.7),
-                   0 0 15px rgba(100, 100, 100, 0.6),
-                   0 0 25px rgba(130, 130, 130, 0.5),
-                   0 0 35px rgba(168, 168, 168, 0.4);
-  }
-  50% {
-      text-shadow: 0 0 10px rgba(21, 21, 21, 0.7),
-                   0 0 20px rgba(100, 100, 100, 0.6),
-                   0 0 30px rgba(130, 130, 130, 0.5),
-                   0 0 40px rgba(168, 168, 168, 0.4);
+    width: 0;
   }
   100% {
-      text-shadow: 0 0 5px rgba(21, 21, 21, 0.7),
-                   0 0 15px rgba(100, 100, 100, 0.6),
-                   0 0 25px rgba(130, 130, 130, 0.5),
-                   0 0 35px rgba(168, 168, 168, 0.4);
+    width: 100%;
   }
 }
 
-.inicio_johan h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #c9c9c9;
-  text-shadow: 2px 2px 20px #000000;
-  animation: magicText 3s infinite alternate;
-  will-change: text-shadow;
+.text-typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;  /* Asegura que el texto está centrado */
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
 }
 
+/* Animación del cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
 .inicio_johan h2 {
-  font-family: "Monserrat", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #8a8a8a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #8a8a8a ;
   text-shadow: 2px 2px 20px #000000;
-  animation: magicText 3s infinite alternate;
- will-change: text-shadow;
+
+}
+
+.inicio_johan h3 {
+  font-family: "Monserrat", sans-serif;
+  
+  font-weight: 800;
+  color: #c9c9c9;
+  text-shadow: 2px 2px 20px #000000;
+
+}
+
+.inicio_johan h6{
+  font-family: "Monserrat", sans-serif;
+
+  font-weight: 800;
+  color: #c9c9c9;
+  text-shadow: 2px 2px 20px #000000;
 }
 
 .achievement-highlight {
+  font-family: "Monserrat", sans-serif;
+  text-align: center;
   font-size: 1.2rem;
   color: #cccccc;
   margin-top: 20px;
-  font-style: italic;
-  line-height: 1.5;
-  max-width: 49%;
+  max-width: 50%;
   text-shadow: 2px 2px 20px #000000;
 }
 
@@ -300,7 +285,8 @@ header.scrolled {
 
 .button {
   height: 50px;
-  width: 47%;
+  width: auto;
+  padding: 10px 20px;
   position: relative;
   background-color: rgba(128, 128, 128, 0.337);
   cursor: pointer;
@@ -309,8 +295,6 @@ header.scrolled {
   border-radius: 30px;
   color: #cccccc;
   transition: all 0.5s ease-in-out;
-  
-
 }
 
 .btn-txt {
@@ -585,7 +569,7 @@ header.scrolled {
 }
 
 .grid-item p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -891,5 +875,22 @@ header.scrolled {
   }
 }
 
+.scroll-nav{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #4b4b4b;
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 100px;
+}
 
+@keyframes enhance-header {
+   to{
+    background-color: rgba(180, 180, 180, 0.589);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    margin-top: 20px;
+   }
+}
   
