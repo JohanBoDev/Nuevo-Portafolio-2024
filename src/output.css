@@ -1021,6 +1021,7 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
+/*
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -1056,7 +1057,7 @@ input:checked + .toggle-bg {
     max-width: 1536px;
   }
 }
-
+*/
 .pointer-events-none {
   pointer-events: none;
 }
