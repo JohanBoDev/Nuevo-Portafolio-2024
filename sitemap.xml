@@ -1,33 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <url>
-    <loc>https://www.johanbodev.online/</loc>
-    <priority>1.0</priority>
-  </url>
 
-  <url>
-    <loc>https://www.johanbodev.online/proyectos.html</loc>
-  </url>
+<url>
+  <loc>https://www.johanbodev.online/</loc>
+  <lastmod>2025-03-26T19:01:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/assets/CV%20Johan%20Bohorquez.pdf</loc>
+  <lastmod>2025-03-26T19:01:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/comunitech.html</loc>
+  <lastmod>2025-03-26T19:01:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/nocaima.html</loc>
+  <lastmod>2025-03-26T19:01:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/dogma.html</loc>
+  <lastmod>2025-03-26T19:01:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/tutorlabs.html</loc>
+  <lastmod>2025-03-26T19:01:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/climacheck.html</loc>
+  <lastmod>2025-03-26T19:01:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/assets/certificados/1070704811-Desarrollo%20Web%20Full%20Stack.pdf</loc>
+  <lastmod>2025-03-26T19:01:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/assets/certificados/Certificado%20aplicacion%20de%20la%20calidad%20del%20software%20en%20el%20proceso%20de%20desarrollo.pdf</loc>
+  <lastmod>2025-03-26T19:01:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/assets/certificados/Certificado%20calidad%20en%20el%20desarrollo%20de%20software.pdf</loc>
+  <lastmod>2025-03-26T19:01:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/assets/certificados/Certificado%20manejo%20de%20pruebas%20de%20software.pdf</loc>
+  <lastmod>2025-03-26T19:01:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.johanbodev.online/index.html</loc>
+  <lastmod>2025-03-26T19:01:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-  <url>
-    <loc>https://www.johanbodev.online/comunitech.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.johanbodev.online/dogma.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.johanbodev.online/climacheck.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.johanbodev.online/nocaima.html</loc>
-  </url>
-
-  <url>
-    <loc>https://www.johanbodev.online/tutorlabs.html</loc>
-  </url>
 
 </urlset>
